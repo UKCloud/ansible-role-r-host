@@ -1,0 +1,4 @@
+- name: Setup EPEL
+  yum:
+      name: epel-release
+      state: present

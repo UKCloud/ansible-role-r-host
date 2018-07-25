@@ -1,0 +1,5 @@
+- name: Install R and dependencies
+  apt:
+      name: "{{ r_packages[ansible_os_family|lower] }}"
+      state: present
+      

@@ -1,0 +1,9 @@
+- include: repository_{{ ansible_os_family|lower }}.yaml
+  tags:
+      - r
+      - packages
+
+- include: "packages_{{ ansible_os_family|lower }}.yaml"
+  tags:
+      - r
+      - packages

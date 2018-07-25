@@ -1,0 +1,10 @@
+---
+- apt_key: 
+    keyserver: keyserver.ubuntu.com
+    id: "{{ cran_apt_key_id }}"
+
+- apt_repository:
+    repo: "deb https://cloud.r-project.org/bin/linux/ubuntu {{ ansible_distribution_release }}-{{ cran_version }}/ "
+    state: present
+    update_cache: yes
+    

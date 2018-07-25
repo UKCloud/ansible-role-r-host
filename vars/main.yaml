@@ -1,0 +1,29 @@
+r_packages:
+    redhat:
+        - R-core
+        - R-core-devel
+        - R-devel
+        - "@Development Tools"
+        - libcurl-devel
+        - openssl-devel
+        - libxml2-devel
+        - R
+        - R-core
+        - R-core-devel
+        - R-devel
+        - R-java
+        - R-java-devel
+        - tre
+        - tre-common
+        - tre-devel
+        - zvbi-fonts
+        - openblas-Rblas
+        - libRmath
+        - libRmath-devel
+    debian:
+        - r-base
+        - r-base-dev
+        - build-essential
+
+cran_apt_key_id: E298A3A825C0D65DFD57CBB651716619E084DAB9
+cran_version: cran35

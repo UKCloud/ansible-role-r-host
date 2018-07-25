@@ -1,0 +1,4 @@
+- name: Install R and dependencies
+  yum:
+      name: "{{ r_packages[ansible_os_family|lower] }}"
+      state: present
